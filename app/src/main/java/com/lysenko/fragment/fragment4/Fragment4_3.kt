@@ -23,9 +23,9 @@ class Fragment4_3 : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val v = inflater.inflate(R.layout.activity_fragment_4_3, null)
-        return v
+        override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+            val v = inflater.inflate(R.layout.activity_fragment_4_3, null)
+            return v
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

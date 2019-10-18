@@ -10,7 +10,7 @@ import com.lysenko.R
 class Main3Activity : AppCompatActivity(), OnSomeEventListener {
     override fun someEvent(s: String) {
         val frag2=supportFragmentManager.findFragmentById(R.id.fragment1_activity_main3)
-        frag2?.view?.findViewById<TextView>(R.id.textView_fr1)?.text="Text from Fragment 2: $s"
+        frag2?.view?.findViewById<TextView>(R.id.textView_fr1)?.text="Text from Fragment a2: $s"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,9 +25,9 @@ class Main3Activity : AppCompatActivity(), OnSomeEventListener {
 
     fun onClick(v: View){
         val frag1 = supportFragmentManager.findFragmentById(R.id.fragment1_activity_main3)
-        frag1?.view?.findViewById<TextView>(R.id.textView_fr1)?.text="Access to Fragment 1 from Activity"
+        frag1?.view?.findViewById<TextView>(R.id.textView_fr1)?.text="Access to Fragment a1 from Activity"
 
         val frag2 = supportFragmentManager.findFragmentById(R.id.fragment2_activity_main3)
-        frag2?.view?.findViewById<TextView>(R.id.textView_fr2)?.text="Access to Fragment 2 from Activity"
+        frag2?.view?.findViewById<TextView>(R.id.textView_fr2)?.text="Access to Fragment a2 from Activity"
     }
 }

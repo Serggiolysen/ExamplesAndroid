@@ -14,10 +14,10 @@ class Fragment2 : Fragment() {
 
     val LOG_TAG = "AAA"
 
-    override fun onAttach(activity: Activity?) {
-        super.onAttach(activity)
-        Log.d(LOG_TAG, "Fragment2 onAttach")
-    }
+//    override fun onAttach(activity: Activity?) {
+//        super.onAttach(activity)
+//        Log.d(LOG_TAG, "Fragment2 onAttach")
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
