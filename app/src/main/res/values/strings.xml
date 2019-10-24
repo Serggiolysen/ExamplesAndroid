@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">zzzExaples</string>
-    <string name="title_activity_map">Map</string>
+    <string name="title_activity_map">Exaples</string>
+    <string name="roll">Roll</string>
+    <string name="dicerolled">dice rolled!</string>
+    <string name="count_up">count up</string>
 </resources>

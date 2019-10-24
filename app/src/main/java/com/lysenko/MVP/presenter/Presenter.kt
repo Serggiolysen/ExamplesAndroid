@@ -1,6 +1,7 @@
 package com.lysenko.MVP.presenter
 
 import com.lysenko.MVP.model.DataSet
+import com.lysenko.MVP.model.RetrofitService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -16,7 +16,6 @@ class Main4Activity : AppCompatActivity(), ViewInterface {
         setContentView(R.layout.activity_main4)
 
         Presenter(this).getDataFromApi("london")
-
     }
 
     override fun onDataCompleteFromApi(item: Item) {

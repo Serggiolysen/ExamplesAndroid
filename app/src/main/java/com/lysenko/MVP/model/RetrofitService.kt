@@ -1,6 +1,5 @@
-package com.lysenko.MVP.presenter
+package com.lysenko.MVP.model
 
-import com.lysenko.MVP.model.DataSet
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -11,7 +10,6 @@ interface RetrofitService {
 
     @GET("{city}.json?key=65784636b1feaa6dd4cf0c876d069e90")
     fun detApi(@Path("city") city: String): Call<DataSet>
-
 
     companion object {
         fun create(): RetrofitService {

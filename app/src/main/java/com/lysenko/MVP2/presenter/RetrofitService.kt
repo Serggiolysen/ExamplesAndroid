@@ -1,6 +1,5 @@
 package com.lysenko.MVP2.presenter
 
-import com.lysenko.MVP2.model.Poi
 import com.lysenko.MVP2.model.PoiList
 import retrofit2.Call
 import retrofit2.Retrofit
