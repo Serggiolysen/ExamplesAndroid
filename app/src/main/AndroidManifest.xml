@@ -2,18 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.lysenko"
-    android:targetSandboxVersion="1">
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality.
-    -->
+    android:targetSandboxVersion="1"
+    tools:targetApi="o">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -24,14 +22,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="n">
+
+        <service android:name=".service.MyService" />
+
+        <provider
+            android:name="com.lysenko.contentProvider.DBProvider"
+            android:authorities="com.lysenko.contentProvider.1"
+            android:exported="true"
+            />
+
+        <activity android:name=".intent.intent4.ColorActivity" />
+        <activity android:name=".intent.intent4.AlignActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".MVP4.view.MainActivity"
+            android:name=".contentProvider.MainActivityContentProvider"
             android:label="@string/title_activity_map">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +49,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".intent.intent2.ViewActivity"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".intent.intent1.InfoIntent"
+            android:label="date/time">
+            <intent-filter>
+                <action android:name="android.intent.action.time" />
+                <action android:name="android.intent.action.date" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.intent1.InfoIntent2"
+            android:label="date2/time2">
+            <intent-filter>
+                <action android:name="android.intent.action.time" />
+                <action android:name="android.intent.action.date" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intent.intent3.NameActivityIntent" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

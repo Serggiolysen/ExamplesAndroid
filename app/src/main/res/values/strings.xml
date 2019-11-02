@@ -4,4 +4,7 @@
     <string name="roll">Roll</string>
     <string name="dicerolled">dice rolled!</string>
     <string name="count_up">count up</string>
+    <string name="title_activity_main_intent3">MainActivityIntent3</string>
+    <string name="title_activity_color">ColorActivity</string>
+    <string name="title_activity_main_xml_parse">MainActivityXmlParse</string>
 </resources>
