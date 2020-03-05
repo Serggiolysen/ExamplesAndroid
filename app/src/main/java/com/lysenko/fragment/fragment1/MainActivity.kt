@@ -13,31 +13,31 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fr)
-        Log.d(LOG_TAG, "MainActivity onCreate")
+        Log.d(LOG_TAG, "MainActivityGoogle onCreate")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d(LOG_TAG, "MainActivity onStart")
+        Log.d(LOG_TAG, "MainActivityGoogle onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(LOG_TAG, "MainActivity onResume")
+        Log.d(LOG_TAG, "MainActivityGoogle onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(LOG_TAG, "MainActivity onPause")
+        Log.d(LOG_TAG, "MainActivityGoogle onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(LOG_TAG, "MainActivity onStop")
+        Log.d(LOG_TAG, "MainActivityGoogle onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(LOG_TAG, "MainActivity onDestroy")
+        Log.d(LOG_TAG, "MainActivityGoogle onDestroy")
     }
 }

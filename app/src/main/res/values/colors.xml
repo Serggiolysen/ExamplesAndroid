@@ -11,4 +11,7 @@
     <color name="blue">#0F3EE7</color>
     <color name="black">#050505</color>
     <color name="blueLight">#628CFC</color>
+    <color name="buttonLabel">#d3d3d3</color>
+    <color name="comment_light_background">#d6d6d6</color>
+
 </resources>

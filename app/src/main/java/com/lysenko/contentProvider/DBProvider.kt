@@ -4,8 +4,6 @@ import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 
 class DBProvider : ContentProvider() {
     override fun insert(uri: Uri, values: ContentValues?): Uri? {

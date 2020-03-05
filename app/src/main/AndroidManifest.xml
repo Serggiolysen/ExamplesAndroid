@@ -10,10 +10,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
 
     <application
+        android:name=".MVP.MVP6.AppMVP6"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,13 +24,23 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:targetApi="n">
 
+
         <service android:name=".service.MyService" />
 
+        <activity
+            android:name=".MVP.MVP6.views.MainActivityMVP6"
+            android:label="@string/title_activity_map">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <provider
-            android:name="com.lysenko.contentProvider.DBProvider"
+            android:name=".contentProvider.DBProvider"
             android:authorities="com.lysenko.contentProvider.1"
-            android:exported="true"
-            />
+            android:exported="true" />
 
         <activity android:name=".intent.intent4.ColorActivity" />
         <activity android:name=".intent.intent4.AlignActivity" />
@@ -40,15 +49,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".contentProvider.MainActivityContentProvider"
-            android:label="@string/title_activity_map">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
         <activity
             android:name=".intent.intent2.ViewActivity"
             android:label="@string/title_activity_map" />
@@ -75,6 +77,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".intent.intent3.NameActivityIntent" />
+        <activity android:name="._google_codelabs.archGoogle.ActivityWord" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

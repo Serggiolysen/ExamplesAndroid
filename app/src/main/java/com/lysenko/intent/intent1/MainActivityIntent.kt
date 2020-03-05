@@ -22,8 +22,8 @@ class MainActivityIntent : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v){
-            button_time -> startActivity(Intent("android.intent.action.time"))
-            button_date -> startActivity(Intent("android.intent.action.date"))
+//            button_time -> startActivity(Intent("android.intent.action.time"))
+//            button_date -> startActivity(Intent("android.intent.action.date"))
         }
     }
 }

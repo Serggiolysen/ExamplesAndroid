@@ -25,7 +25,7 @@ class MainActivityDiceRoller : AppCompatActivity() {
     }
 
     private fun countUp() {
-        val tmpField = result_text.text.toString().toInt()+1
+        val tmpField = result_text.text.toString().toInt() + 1
         result_text.text = tmpField.toString()
     }
 }
