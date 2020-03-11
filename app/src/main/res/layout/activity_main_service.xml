@@ -26,7 +26,7 @@
         android:indeterminate="true" />
 
     <TextView
+        android:id="@+id/tvService"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvService"/>
+        android:layout_height="wrap_content" />
 </LinearLayout>
