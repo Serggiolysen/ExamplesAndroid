@@ -38,4 +38,36 @@
     <string name="finish_button">Finish Flow</string>
     <string name="send_deep_link_notification_button">Send deep link notification</string>
     <string name="title_activity_main6_coroutines">Main6ActivityCoroutines</string>
+
+    <string name="blur_title">Select Blur Amount</string>
+
+    <string name="select_image">Select Image</string>
+    <string name="go">Go</string>
+    <string name="see_file">See File</string>
+
+    <string name="description_image">The image to blur and save.</string>
+
+    <string name="blur_lv_1">A little blurred</string>
+    <string name="blur_lv_2">More blurred</string>
+    <string name="blur_lv_3">The most blurred</string>
+    <string name="cancel_work">Cancel Work</string>
+
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+        WorkManager Demo -> App Permissions and grant access to Storage.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="open_nav_drawer">Open</string>
+    <string name="close_nav_drawer">Close</string>
+    <string name="styles_themes_app_name">Styles and themes</string>
+    <string name="Welcome">welcome</string>
+
+    <string name="text_next">Next</string>
+    <string name="text_start">Start</string>
+    <string name="text_next_fragment">Next fragment</string>
+    <string name="text_next_activity">Next Activity</string>
+    <string name="text_secondary_fragment">This is Secondary Fragment</string>
+    <string name="text_mainactivity">MainActivity</string>
+    <string name="text_back">Back</string>
+    <string name="text_secondaryactivity">SecondaryActivity</string>
 </resources>

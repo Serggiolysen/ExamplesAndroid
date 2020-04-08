@@ -27,4 +27,22 @@ The margin is a simple delimiter between the words. -->
         <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
     </style>
 
+    <style name="Widget">
+        <item name="android:background">@color/blueLight</item>
+    </style>
+
+    <style name="YellowTextWidget" parent="Widget">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="WelcomeView" >
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="imgTint">@color/colorPrimary</item>
+        <item name="android:background">@color/yellow</item>
+
+    </style>
+
+
+
 </resources>

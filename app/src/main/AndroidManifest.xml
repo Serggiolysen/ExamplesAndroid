@@ -11,6 +11,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name=".MVP.MVP6.AppMVP6"
@@ -25,13 +30,8 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:targetApi="n">
 
-        <service android:name=".service.s1.MyService" />
-        <service android:name=".service.s2.MyService2" />
-        <service android:name=".jobscheduler.ExampleJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE"/>
-
         <activity
-            android:name=".jobscheduler.JobschedulerMainActivity1"
+            android:name=".Test.MainActivityTest"
             android:label="@string/title_activity_map">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,9 +40,35 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".jobIntentService.ExampleJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name=".widgets.w1.MyWidget"
+            android:icon="@drawable/a1"
+            android:label="MyWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_metadata" />
+        </receiver>
+
+        <service android:name=".service.s1.MyService" />
+        <service android:name=".service.s2.MyService2" />
+        <service
+            android:name=".jobscheduler.ExampleJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".jobscheduler.Example"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
         <provider
-            android:name=".contentProvider.DBProvider"
-            android:authorities="com.lysenko.contentProvider.1"
+            android:name=".contentProvider.c2.MyContactsProvider"
+            android:authorities="com.lysenko.contentProvider.AdressBook"
             android:exported="true" />
 
         <activity android:name=".intent.intent4.ColorActivity" />
@@ -78,7 +104,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".intent.intent3.NameActivityIntent" />
-        <activity android:name="._google_codelabs.archGoogle.ActivityWord" />
+        <activity android:name=".MVVM.archGoogle.ActivityWord" />
+        <activity android:name=".workManager.BlurActivity" />
+        <activity android:name=".widgets.w2.ConfigActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE." />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Test.SecondaryActivityTest" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -92,16 +125,6 @@
                 <action android:name="com.lysenko.action.CAT" />
             </intent-filter>
         </receiver>
-
-
-
-<!--        <receiver android:name=".broadcast.b3.ExamplBroadcastReceiver">-->
-
-<!--             <intent-filter>-->
-<!--                 <action android:name="android.intent.action.BOOT_COMPLETED"/>-->
-<!--                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
-<!--             </intent-filter>-->
-<!--        </receiver>-->
     </application>
 
 </manifest>
